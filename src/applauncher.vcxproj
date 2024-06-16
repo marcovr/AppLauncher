@@ -10,6 +10,7 @@
     </ProjectConfiguration>
   </ItemGroup>
 
+  <!-- Make it a window application to prevent a console appearing -->
   <ItemDefinitionGroup>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -22,12 +23,14 @@
   <PropertyGroup>
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
 
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <Link Include="Shlwapi.lib" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />
