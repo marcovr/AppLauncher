@@ -12,6 +12,8 @@ applauncher.exe dotPDNLLC.paint.net_h55e3w7q8jbva!dotPDNLLC.paint.net C:\Image.p
 This allows to set a store app as the default image editor in the registry. Just edit
 `Computer\HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\edit\command` and set its value to e.g. `applauncher.exe dotPDNLLC.paint.net_h55e3w7q8jbva!dotPDNLLC.paint.net "%1"`
 
+Or, to create the entry, see [set_image_editor_pdn.reg](set_image_editor_pdn.reg) (it needs to be of type REG_EXPAND_SZ, which for the default entry cannot be changed through regedit)
+
 There is also a way to do this without the applauncher, but it will flash a command line window: `cmd /c start shell:AppsFolder\dotPDNLLC.paint.net_h55e3w7q8jbva!dotPDNLLC.paint.net "%1"`
 
 
